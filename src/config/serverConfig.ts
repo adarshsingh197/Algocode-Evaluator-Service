@@ -1,7 +1,11 @@
-import dotenv from "dotenv"
+import dotenv from "dotenv";
 
-dotenv.config()
+dotenv.config();
 
 export default{
-    PORT:process.env.PORT || 8080
-}
+    PORT:process.env.PORT || 8080,
+    REDIS_PORT:process.env.REDIS_PORT || 6379,
+    REDIS_HOST:process.env.REDIS_HOST || '127.0.0.1'
+
+
+};

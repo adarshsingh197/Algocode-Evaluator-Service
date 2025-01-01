@@ -1,9 +1,12 @@
-import express from "express"
+import express,{Express} from "express";
 import serverConfig from "./config/serverConfig";
+import apiRouter from "./routes"
+const app: Express = express();
 
-const app = express();
 
+
+app.use('/api',apiRouter)
 app.listen(serverConfig.PORT,()=>{
-    console.log("hello world")
-    console.log("new hello world")
-})
+    console.log("hello world");
+    console.log("new hello world");
+});
