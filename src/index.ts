@@ -1,0 +1,9 @@
+import express from "express"
+import serverConfig from "./config/serverConfig";
+
+const app = express();
+
+app.listen(serverConfig.PORT,()=>{
+    console.log("hello world")
+    console.log("new hello world")
+})
